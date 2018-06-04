@@ -1,11 +1,19 @@
-<div id="tweet-table">
-    <table>
-        <thead>
-            <td>Tweet</td>
-            <td>Survey</td>
-        </thead>
-        <tbody id="tweet-table-body">
-            
-        </tbody>
-    </table>
+<div>
+    <div>
+        <div>
+            <i>Please read the Tweet at the following link.  After you're done, fill out the survey below (note that the suvey will not load until you've followed the link).</i>
+        </div>
+        <span>
+            <h2 id="tweets-loading">Loading... please wait</h2>
+            <h2 id="instructions" style="display:none;">Tweet #<span id="tweet-idx"></span> of <span id="tweet-count"></span>: <span id="tweet-link"></span></h2>
+        </span>
+    </div>
+    
+    <div id="all-done"></div>
+    
+    <iframe id="qualFrame" 
+            name="qualtrics" scrolling="auto" frameborder="no" align="center" 
+            width="100%"
+            height="800"
+            style="display: none;"></iframe>
 </div>
